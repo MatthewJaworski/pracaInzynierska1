@@ -1,0 +1,15 @@
+{
+  "fieldsNames": {
+    "fromStudyForm": "Current form of study",
+    "toStudyForm": "New form of study",
+    "fromSemesterNumber": "From what semester you would like to move to the new form of study",
+    "justificationDescriptionArea": "Justification",
+    "academicYear": "Academic year"
+  },
+  "options": {
+    "stacionary": "Stacionary",
+    "nonStacionary": "Non-stacionary",
+    "Accept": "Accept",
+    "Reject": "Reject"
+  }
+}

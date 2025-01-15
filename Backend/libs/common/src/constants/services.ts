@@ -1,0 +1,5 @@
+export const AUTH_SERVICE = 'USERS';
+export const DOCUMENTS_SERVICE = 'DOCUMENTS';
+export const COMMENTS_SERVICE = 'COMMENTS';
+export const NOTIFICATIONS_SERVICE = 'NOTIFICATIONS';
+export const EMAIL_SERVICE = 'EMAIL';

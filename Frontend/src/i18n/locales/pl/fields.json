@@ -1,0 +1,15 @@
+{
+  "fieldsNames": {
+    "fromStudyForm": "Obecna forma studiowania",
+    "toStudyForm": "Nowa forma studiowania",
+    "fromSemesterNumber": "Od którego semestru chcesz przenieść się na nową formę studiowania",
+    "justificationDescriptionArea": "Uzasadnienie",
+    "academicYear": "Rok akademicki"
+  },
+  "options": {
+    "stacionary": "Stacionarne",
+    "nonStacionary": "Niestacionarne",
+    "Accept": "Akceptuj",
+    "Reject": "Odrzuć"
+  }
+}

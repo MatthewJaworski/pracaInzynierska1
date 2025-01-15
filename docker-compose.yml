@@ -1,0 +1,208 @@
+services:
+  minio:
+    image: minio/minio
+    container_name: minio
+    environment:
+      MINIO_ROOT_USER: "${minio_login}" 
+      MINIO_ROOT_PASSWORD: "${minio_password}"  
+    volumes:
+      - minio_data:/data
+    ports:
+      - "9000:9000"   # MinIO API
+      - "9001:9001"   # MinIO Console
+    command: server /data --console-address ":9001"
+    restart: always
+
+  postgresUsers:
+    image: postgres:14
+    container_name: postgresusers
+    environment:
+      POSTGRES_USER: "${pg_users_user}"
+      POSTGRES_PASSWORD: "${pg_users_password}"
+      POSTGRES_DB: "usersdb"
+    volumes:
+      - postgresusers_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: always
+
+  postgresDocuments:
+    image: postgres:14
+    container_name: postgresdocuments
+    environment:
+      POSTGRES_USER: "${pg_documents_user}"
+      POSTGRES_PASSWORD: "${pg_documents_password}"
+      POSTGRES_DB: "documentsdb"
+    volumes:
+      - postgresdocuments_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    restart: always
+
+  postgresComments:
+    image: postgres:14
+    container_name: postgrescomments
+    environment:
+      POSTGRES_USER: "${pg_comments_user}"
+      POSTGRES_PASSWORD: "${pg_comments_password}"
+      POSTGRES_DB: "commentsdb"
+    volumes:
+      - postgrescomments_data:/var/lib/postgresql/data
+    ports:
+      - "5434:5432"
+    restart: always
+
+  postgresNotifications:
+    image: postgres:14
+    container_name: postgresnotifications
+    environment:
+      POSTGRES_USER: "${pg_notifications_user}"
+      POSTGRES_PASSWORD: "${pg_notifications_password}"
+      POSTGRES_DB: "notificationsdb"
+    volumes:
+      - postgresnotifications_data:/var/lib/postgresql/data
+    ports:
+      - "5435:5432"
+    restart: always
+
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmqdata:/var/lib/rabbitmq
+    hostname: rabbitmq
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8080:8080"
+
+  auth:
+    build: 
+      context: ./Backend
+      dockerfile: apps/auth/Dockerfile
+      target: development
+    command: npm run start:dev auth
+    env_file:
+      - Backend/apps/auth/.env
+    depends_on:
+      - postgresUsers
+      - rabbitmq
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./Backend/apps/auth:/app
+    environment:
+      - DATABASE_HOST=postgresusers
+
+  document:
+    build: 
+      context: ./Backend
+      dockerfile: apps/document/Dockerfile
+      target: development
+    command: npm run start:dev document
+    env_file:
+      - Backend/apps/document/.env
+    depends_on:
+      - postgresDocuments
+      - rabbitmq
+    ports:
+      - "3003:3003"
+    volumes:
+      - ./Backend/apps/document:/app
+    environment:
+      - DATABASE_HOST=postgresdocuments
+
+  comments:
+    build: 
+      context: ./Backend
+      dockerfile: apps/comments/Dockerfile
+      target: development
+    command: npm run start:dev comments
+    env_file:
+      - Backend/apps/comments/.env
+    depends_on:
+      - postgresComments
+      - rabbitmq
+    ports:
+      - "3004:3004"
+    volumes:
+      - ./Backend/apps/comments:/app
+    environment:
+      - DATABASE_HOST=postgrescomments
+
+  notifications:
+    build: 
+      context: ./Backend
+      dockerfile: apps/notifications/Dockerfile
+      target: development
+    command: npm run start:dev notifications
+    env_file:
+      - Backend/apps/notifications/.env
+    depends_on:
+      - postgresNotifications
+      - rabbitmq
+    ports:
+      - "3005:3005"
+    volumes:
+      - ./Backend/apps/notifications:/app
+    environment:
+      - DATABASE_HOST=postgresnotifications
+
+  email:
+    build: 
+      context: ./Backend
+      dockerfile: apps/email/Dockerfile
+      target: development
+    command: npm run start:dev email
+    env_file:
+      - Backend/apps/email/.env
+    depends_on:
+      - rabbitmq
+    ports:
+      - "3006:3006"
+    volumes:
+      - ./Backend/apps/email:/app
+    environment:
+      - DATABASE_HOST=postgresusers
+
+  bff:
+    build: 
+      context: ./Backend
+      dockerfile: apps/bff/Dockerfile
+      target: development
+    command: npm run start:dev bff
+    env_file:
+      - Backend/apps/bff/.env
+    depends_on:
+      - rabbitmq
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./Backend/apps/bff:/app 
+
+  frontend:
+      build:
+        context: ./Frontend     
+        dockerfile: Dockerfile        
+      ports:
+        - "3002:3002" 
+      volumes:
+        - ./Frontend:/app   
+        - /app/node_modules 
+      environment:
+        - NODE_ENV=development
+        - PORT=3002
+
+volumes:
+  minio_data:
+  postgresusers_data:
+  postgresdocuments_data:
+  postgrescomments_data:
+  postgresnotifications_data:
+  rabbitmqdata:
+  Frontend:

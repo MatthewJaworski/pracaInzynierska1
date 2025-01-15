@@ -1,0 +1,226 @@
+{
+  "confirmPassword": "Potwierdź hasło",
+  "activateAccount": "Aktywuj konto",
+  "appName": "Deans docks",
+  "email": "Email",
+  "password": "Hasło",
+  "submit": "Zatwierdź",
+  "edit": "Edytuj",
+  "remove": "Usuń",
+  "loading": "Ładowanie...",
+  "yes": "Tak",
+  "no": "Nie",
+  "comment": "Skomentuj",
+  "assign": "Przypisz",
+  "assignTo":"Przypisz do",
+  "deanNotFoundError":"Nie znaleziono dziekana",
+  "name":"Imie",
+  "action":"Akcja",
+  "decideAndFill":"Zdecyduj i wypełnij",
+  "document":"Dokument",
+  "upload":"Prześlij",
+  "address":"Adres",
+  "city"  : "Miasto",
+  "postalCode" : "Kod pocztowy",
+  "street" : "Ulica",
+  "houseNumber" : "Numer domu",
+  "cancel" : "Anuluj",
+  "saveChanges":"Zapisz zmiany",
+  "bankAccount":"Konto bankowe",
+  "accountNumber":"Numer konta",
+  "currency":"Waluta",
+  "bankName":"Nazwa banku",
+  "value":"Wartość",
+  "delete":"Usuń",
+  "status":"Status",
+  "open":"Otwórz",
+  "accountName":"Nazwa konta",
+  "correspondenceAddress":"Adres do korespondencji",
+  "personalInformation":"Informacje osobiste",
+  "emial":"Email",
+  "phoneNumber":"Phone number",
+  "fieldOfStudy":"Kierunek studiów",
+  "year":"Rok",
+  "semester":"Semest",
+  "studyForm":"Forma studiów",
+  "next":"Następny",
+  "previous":"Poprzedni",
+  "submitted":"Wysłany",
+  "assigned":"Przypisany",
+  "approved":"Zatwierdzony",
+  "rejected":"Odrzucony",
+  "reject":"Odrzuć",
+  "placeholders": {
+    "email": "Wprowadź swój adres e-mail",
+    "password": "Wprowadź swoje hasło"
+  },
+  "errors": {
+    "passwordDoesNotMatch": "Hasła nie pasują do siebie",
+    "currencyLong":"Waluta powinna mieć maksymalnie 3 znaki",
+    "bankNumberText":"Numer konta bankowego powinien składać się od 8 do 12 cyfr",
+    "postalCodeFormat":"Nieprawidłowy format kodu pocztowego",
+    "required": "To pole jest wymagane",
+    "email": "Wprowadź poprawny adres e-mail",
+    "password": "Wprowadź poprawne hasło",
+    "authorization": "Nieprawidłowy adres e-mail lub hasło",
+    "onlyOneFile":"Nie mozna przesłać więcej niż jeden plik na raz",
+    "toManyFiels":"Nie można przesłać więcej niż {{number}} plików",
+    "fileRejected":"Plik {{name}} został odrzucony",
+    "uploadFailed":"Przesyłanie pliku {{name}} nie powiodło się",
+    "createUsers":"Nie udało się utworzyć użytkowników",
+    "atLeastOneFile":"Musisz dodać przynajmniej jeden plik"
+  },
+  "dropzone":{
+    "drop":"Upuść pliki tutaj",
+    "dragAndDrop":"Przeciągnij i upuść pliki tutaj lub kliknij, aby wybrać pliki",
+    "multipleUpload":"Możesz przesłać {{number}} plików (do {{size}} każdy)",
+    "singleUpload":"Możesz przesłać jeden plik (do {{size}})",
+    "removeFile":"Usuń plik",
+    "uploading":"Przesyłanie...",
+    "uploaded":"Przesłano"
+  },
+  "success": {
+    "addUsers": "Użytkownicy dodani pomyślnie"
+  },
+  "uploadUsers":{
+    "addUsers":"Dodaj użytkowników, prześlij plik csv"
+  },
+  "themeToggle": {
+    "toggle":"Zmien motyw",
+    "dark": "Ciemny",
+    "light": "Jasny",
+    "system": "Systemowy"
+  },
+  "logout": "Wyloguj się",
+  "pleaseWait": "Proszę czekać",
+  "toggleLanguage": "Zmień język",
+  "dashboard":{
+    "title":"Dashboard"
+  },
+  "signatureCard":{
+    "title":"Podpis",
+    "clear":"Wyczyść",
+    "save":"Zapisz"
+  },
+  "documentsForConsideration":{
+    "title":"Dokuemnty do rozpatrzenia",
+    "templateName":"Nazwa szablonu",
+    "status":"Status",
+    "creationDate":"Data utworzenia",
+    "action":"Akcja",
+    "assign":"Przypisz",
+    "open":"Otwórz",
+    "error":"Błąd podczas pobierania dokumentów"
+  },
+  "template":{
+    "atLeastOneFieldRequired":"Przynajmniej jedno pole jest wymagane podczas tworzenia nowego szablonu",
+    "templateDeletionNotification":"Szablon usunieto pomyślnie",
+    "pdfDownloadError":"Błąd podczas ładwoania pliku PDF:",
+    "templateUpdateSuccess":"Szablon zaktualizowany pomyślnie",
+    "templateUpdateError":"Błąd podczas aktualizacji szablonu",
+    "allTemplates":"Wszystkie szablony",
+    "createTemplate":"Utwórz szablon",
+    "templateCreatedNotification":"Szablon utworzony",
+    "templateCreationErrorNotification":"Błąd podczas tworzenia szablonu",
+    "createTemplateTitle":"Utwórz szablon",
+    "templateName":"Nazwa szablonu",
+    "templateDescription":"Opis szablonu",
+    "templateVisibleForStudents":"Widoczny dla studentów",
+    "updateTemplate":"Zaktualizuj szablon",
+    "newTemplate":"Nowy szablon",
+    "templateFile":"Plik szablonu"
+  },
+  "predefinedFields":{
+    "updateFieldNotificationSuccess":"Pole zaaktualizowane pomyślnie",
+    "updateFieldNotificationError":"Błąd podczas aktualizacji pola"
+  },
+  "errorUserType":"Prosze wybrac typ użytkownika",
+  "fields":{
+    "header":"Pola",
+    "errorLoadingPredefinedFields":"Błąd podczas ładowania predefiniowanych pól",
+    "fieldValue":"Wartość pola",
+    "name":"Nazwa pola",
+    "overview":"Przegląd pól",
+    "addPredefinedField":"Dodaj nowe predefiniowane pole",
+    "createField":"Utwórz pole",
+    "createPredefinedFieldTitle":"Utwórz predefiniowane pole",
+    "fieldCreatedNotification":"Pole utworzone",
+    "fieldCreationErrorNotification":"Wystąpił błąd podczas tworzenia pola",
+    "fieldSuccessNotification":"Pola wypełnione",
+    "fieldsErrorNotification":"Wypełnienie pól nie powiodło się",
+    "fieldRequiredError":"Pole jest wymagane",
+    "signatureRequiredError":"Podpis jest wymagany",
+    "fieldOptionsPredefinedError":"Nie można zmienić wartości pola z predefiniowanych opcji",
+    "predefinedFieldDeleteSuccessNotification":"Predefiniowane pole usunięte"
+  },
+  "documents":{
+    "header":"Dokumenty",
+    "download":"Pobierz dokument",
+    "errorLoadingDocument":"Błąd podczas ładowania dokumentu",
+    "reasignedNotificationSuccess":"Dokument przypisany ponownie",
+    "documentDetailsError":"Błąd podczas pobierania szczegółów dokumentu",
+    "allDocuments":"Wszystkie dokumenty",
+    "documentNotificationSuccess":"Dokument zaaktualizowny",
+    "documentNotificationError":"Błąd podczas aktualizacji dokumentu",
+    "documentSentNotification":"Wysłano wniosek",
+    "documentSentErrorNotification":"Wystąpił błąd podczas wysyłania wniosku",
+    "createDocumentTitle":"Wypełnij brakujące pola aby utworzyć dokument",
+    "assignedToDean":"Dokument przypisany do dziekana",
+    "notFoundPerson":"Nie znaleziono żadnej osoby do przypisania do tego dokumentu",
+    "availableDocuments":"Dostępne dokumenty",
+    "noPossibleDocuments":"Brak dostępnych dokumentów",
+    "submitApplication":"Zatwierdź wniosek",
+    "assignToDean":"Przypisz do dziekana"
+  },
+  "comments":{
+    "enterComment":"Wprowadź komentarz",
+    "comments":"Komentarze",
+    "addCommentNotificationSuccess":"Komentarz dodany"
+  },
+  "users":{
+    "userUpdateSuccess":"Użytkownik zaktualizowany",
+    "userUpdateError":"Błąd podczas aktualizacji użytkownika"
+  },
+  "file":{
+    "fileFieldRequiredError":"Przynajmniej jeden plik jest wymagany",
+    "fileMatchNameText":"Dodany plik powinien mieć taką samą nazwę",
+    "templateFile":"Plik szablonu",
+    "fileUploadSuccessNotification":"Plik przesłany pomyślnie",
+    "fileUploadErrorNotification":"Wystapił błąd podczas przesyłania pliku"
+  },
+  "attachments":{
+    "attachments":"Załączniki",
+    "download":"Pobierz załącznik",
+    "addAttachmentTitle":"Dodaj załącznik jeśli jest wymagany"
+   },
+   "workers":{
+    "getWorkersError":"Błąd podczas pobierania pracowników",
+    "departmentWorkers":"Pracownicy dziekanatu"
+   },
+   "user":{
+    "studentDashboard":"Panel studenta",
+    "editBankAccount":"Edytuj konto bankowe",
+    "editCorrespondenceAddress":"Edytuj adres do korespondencji"
+   },
+   "templates":{
+    "header":"Szablony"
+   },
+   "profile":{
+     "header":"Profil"
+   },
+   "activateAccountInfo":{
+     "success":"Konto aktywowane pomyślnie",
+     "error":"Błąd podczas aktywacji konta"
+   },
+   "archivum":{
+     "header":"Archiwum"
+   },
+   "notifications":{
+    "noNotifications":"Brak powiadomień",
+    "comment.added":"Komentarz został dodany do twojego dokumentu",
+    "document.status.changed.submitted":"Dokument został wysłany",
+    "document.status.changed.assigned":"Dokument został przypisany do rozpatrzenia",
+    "document.status.changed.approved":"Dokument został zatwierdzony",
+    "document.status.changed.rejected":"Dokument został odrzucony"
+   }
+}

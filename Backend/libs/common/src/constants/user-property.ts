@@ -1,0 +1,30 @@
+import { User } from 'libs/common/entities/User';
+
+type UserProperty = keyof User;
+export const USER_PROPERTY: Record<UserProperty, true> = {
+  id: true,
+  email: true,
+  password: true,
+  role: true,
+  phoneNumber: true,
+  bankAccount: true,
+  accountNumber: true,
+  accountCurrency: true,
+  bankName: true,
+  firstName: true,
+  lastName: true,
+  albumNumber: true,
+  fieldOfStudy: true,
+  year: true,
+  semester: true,
+  studyForm: true,
+  studyLevel: true,
+  permanentStreet: true,
+  permanentCity: true,
+  permanentPostalCode: true,
+  permanentNumber: true,
+  correspondenceStreet: true,
+  correspondenceCity: true,
+  correspondencePostalCode: true,
+  correspondenceNumber: true,
+} as const;

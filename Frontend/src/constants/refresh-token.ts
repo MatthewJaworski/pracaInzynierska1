@@ -1,0 +1,3 @@
+const TEN_MINUTES = 10 * 60 * 1000;
+
+export const REFRESH_TOKEN_INTERVAL = TEN_MINUTES;

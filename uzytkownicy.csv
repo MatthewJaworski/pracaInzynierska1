@@ -1,0 +1,5 @@
+email,role,phoneNumber,bankAccount,accountNumber,accountCurrency,bankName,firstName,lastName,albumNumber,fieldOfStudy,year,semester,studyForm,studyLevel,permanentStreet,permanentCity,permanentPostalCode,permanentNumber,correspondenceStreet,correspondenceCity,correspondencePostalCode,correspondenceNumber
+admin@example.com,admin,123456789,12345678901234567890123456,ACC123456,USD,Bank of Example,Alice,Admin,,,,,,,Student Street,Admin Street,54321,12345,1A,,,
+student@example.com,student,987654321,65432109876543210987654321,ACC654321,ZL,Student Bank,Bob,Student,A12345,inf,2,4,full-time,behalor,Student Street,Student City,54321,2B,Correspondence Street,Correspondence City,67890,3C
+dean@example.com,dean,555666777,11223344556677889900112233,ACC112233,EUR,Dean Bank,Charlie,Dean,,,,,,,Student Street,Dean Street,54321,11223,3C,,,
+worker@example.com,department-worker,444555666,99887766554433221100998877,ACC998877,ZL,Worker Bank,Dana,Worker,,,,,,,Student Street,Worker Street,54321,44556,4D,,,

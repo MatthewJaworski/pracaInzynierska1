@@ -1,0 +1,227 @@
+{
+  "confirmPassword": "Confirm password",
+  "activateAccount": "Acctivate account",
+  "appName": "Deans docks",
+  "email": "Email",
+  "password": "Password",
+  "submit": "Submit",
+  "edit": "Edit",
+  "remove": "Remove",
+  "loading": "Loading...",
+  "yes": "Yes",
+  "no": "No",
+  "assign": "Assign",
+  "deanNotFoundError":"Dean not found",
+  "comment": "Comment",
+  "assignTo":"Assign to",
+  "name":"Name",
+  "action":"Action",
+  "decideAndFill":"Decide and fill",
+  "document":"Document",
+  "upload":"Upload",
+  "address":"Address",
+  "city"  : "City",
+  "postalCode" : "Postal code",
+  "street" : "Street",
+  "houseNumber" : "House number",
+  "cancel" : "Cancel",
+  "saveChanges":"Save changes",
+  "bankAccount":"Bank account",
+  "accountNumber":"Account number",
+  "currency":"Currency",
+  "bankName":"Bank name",
+  "value":"Value",
+  "delete":"Delete",
+  "status":"Status",
+  "open":"Open",
+  "accountName":"Account name",
+  "correspondenceAddress":"Correspondence address",
+  "personalInformation":"Personal information",
+  "emial":"Email",
+  "phoneNumber":"Phone number",
+  "fieldOfStudy":"Field of study",
+  "year":"Year",
+  "semester":"Semester",
+  "studyForm":"Study form",
+  "next":"Next",
+  "previous":"Previous",
+  "submitted":"Submitted",
+  "assigned":"Assigned",
+  "approved":"Approved",
+  "rejected":"Rejected",
+  "reject":"Reject",
+  "placeholders": {
+    "email": "Enter your email",
+    "password": "Enter your password"
+  },
+  "errors": {
+    "passwordDoesNotMatch": "Passwords do not match",
+    "currencyLong":"Currency should have maximum 3 characters",
+    "bankNumberText":"The value must be between 8 and 12 digits.",
+    "postalCodeFormat":"Invalid postal code format.",
+    "required": "This field is required",
+    "email": "Please enter a valid email",
+    "password": "Please enter a valid password",
+    "authorization": "Invalid email or password",
+    "onlyOneFile":"You can't upload more than one file at a time",
+    "toManyFiels":"You can't upload more than {{number}} files",
+    "fileRejected":"File {{name}} was rejected",
+    "uploadFailed":"Failed to upload file {{name}}",
+    "createUsers":"Failed to create users",
+    "atLeastOneFile":"You need to add at least one file"
+  },
+  "dropzone":{
+    "drop":"Drop the files here",
+    "dragAndDrop":"Drag'n'drop files here, or click to select files",
+    "multipleUpload":"You can upload {{number}} files (up to {{size}} each)",
+    "singleUpload":"You can upload one file (up to {{size}})",
+    "removeFile":"Remove file",
+    "uploading":"Uploading...",
+    "uploaded":"Uploaded"
+  },
+  "success": {
+    "addUsers": "Users added successfully"
+  },
+  "uploadUsers":{
+    "addUsers":"Add users, upload csv file"
+  },
+  "themeToggle": {
+    "toggle":"Toggle theme",
+    "dark": "Dark",
+    "light": "Light",
+    "system": "System"
+  },
+  "logout": "Lougout",
+  "pleaseWait": "Please wait",
+  "toggleLanguage": "Toggle language",
+  "dashboard":{
+    "title":"Dashboard"
+  },
+  "signatureCard":{
+    "title":"Signature",
+    "clear":"Clear",
+    "save":"Save"
+  },
+  "documentsForConsideration":{
+    "title":"Documents for consideration",
+    "templateName":"Template name",
+    "status":"Status",
+    "creationDate":"Creation date",
+    "action":"Action",
+    "assign":"Assign",
+    "open":"Open",
+    "error":"Error loading documents"
+  },
+  "template":{
+    "atLeastOneFieldRequired":"At least one file is required when creating a new template",
+    "templateDeletionNotification":"Template deleted successfully",
+    "pdfDownloadError":"Error loading PDF:",
+    "templateUpdateSuccess":"Template updated",
+    "templateUpdateError":"Error updating template",
+    "allTemplates":"All templates",
+    "createTemplate":"Create template",
+    "templateCreatedNotification":"Template created",
+    "templateCreationErrorNotification":"Failed to create template",
+    "createTemplateTitle":"Create template",
+    "templateName":"Template name",
+    "templateDescription":"Template description",
+    "templateVisibleForStudents":"Template visible for students",
+    "updateTemplate":"Update template",
+    "newTemplate":"New template",
+    "templateFile":"Template file"
+  },
+  "predefinedFields":{
+    "updateFieldNotificationSuccess":"Field updated",
+    "updateFieldNotificationError":"Error updating field"
+  },
+  "errorUserType":"Please select your user type",
+  "fields":{
+    "header":"Fields",
+    "errorLoadingPredefinedFields":"Error loading predefined fields",
+    "fieldValue":"Field value",
+    "name":"Field name",
+    "overview":"Fields Overview",
+    "addPredefinedField":"Add new predefined field",
+    "createField":"Create field",
+    "createPredefinedFieldTitle":"Create predefined field",
+    "fieldCreatedNotification":"Field created",
+    "fieldCreationErrorNotification":"Failed to create field",
+    "fieldSuccessNotification":"Fields filled",
+    "fieldsErrorNotification":"Failed to fill fields",
+    "fieldRequiredError":"This field is required",
+    "signatureRequiredError":"Signature is required.",
+    "fieldDropdownPredefinedError":"Dropdown fields require predefined values.",
+    "fieldOptionsPredefinedError":"Options fields require predefined values.",
+    "predefinedFieldDeleteSuccessNotification":"Predefined field deleted"
+  },
+  "documents":{
+    "header":"Documents",
+    "download":"Download document",
+    "errorLoadingDocument":"Error loading documents.",
+    "reasignedNotificationSuccess":"Document reassigned",
+    "documentDetailsError":"There was a problem to get document details",
+    "allDocuments":"All documents",
+    "documentNotificationSuccess":"Document updated",
+    "documentNotificationError":"Failed to update document",
+    "documentSentNotification":"Aplication sent",
+    "documentSentErrorNotification":"Failed to send aplication",
+    "createDocumentTitle":"Fill missing data to complete creating document",
+    "assignedToDean":"Document assigned to dean",
+    "notFoundPerson":"Not found anyone to be assigned for this document.",
+    "availableDocuments":"Available documents",
+    "noPossibleDocuments":"No possible documents to create",
+    "submitApplication":"Submit application",
+    "assignToDean":"Przypisz do dziekana"
+  },
+  "comments":{
+    "enterComment":"Enter comment",
+    "comments":"Comments",
+    "addCommentNotificationSuccess":"Comment added"
+  },
+  "users":{
+    "userUpdateSuccess":"User updated",
+    "userUpdateError":"Failed to update user"
+  },
+  "file":{
+    "fileFieldRequiredError":"At least one file is required",
+    "fileMatchNameText":"Uploaded file should match with name",
+    "templateFile":"Template file",
+    "fileUploadSuccessNotification":"File uploaded successfully",
+    "fileUploadErrorNotification":"Error while uploading files"
+  },
+  "attachments":{
+   "attachments":"Attachments",
+   "download":"Download attachments",
+   "addAttachmentTitle":"Add attachments if needed"
+  },
+  "workers":{
+   "getWorkersError":"Error while getting workers",
+   "departmentWorkers":"Department workers"
+  },
+  "user":{
+   "studentDashboard":"Student dashboard",
+   "editBankAccount":"Edit bank account",
+   "editCorrespondenceAddress":"Edit correspondance address"
+  },
+  "templates":{
+   "header":"Templates"
+  },
+  "profile":{
+    "header":"Profile"
+  },
+  "activateAccountInfo":{
+    "success":"Account activated successfully",
+    "error":"Error while activating account"
+  },
+  "archivum":{
+     "header":"Archivum"
+   },
+   "notifications":{
+    "noNotifications":"No notifications",
+    "comment.added":"Comment was added to your document",
+    "document.status.changed.submitted":"Document was submitted",
+    "document.status.changed.assigned":"Document was assigned to consideration",
+    "document.status.changed.approved":"Document was approved",
+    "document.status.changed.rejected":"Document was rejected"
+   }
+}
