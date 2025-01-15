@@ -112,7 +112,7 @@ export class UserService {
     });
 
     for (const { email, activationToken } of activationData) {
-      const activationLink = `${process.env.FRONTEND_URL}/activate?token=${activationToken}`;
+      const activationLink = `${process.env.LOCAL_FRONTEND_URL}/activate?token=${activationToken}`;
 
       this.emailClient.emit('send_email', {
         to: email,
