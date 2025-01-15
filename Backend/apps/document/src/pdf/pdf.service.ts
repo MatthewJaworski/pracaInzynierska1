@@ -3,6 +3,10 @@ import { USER_PROPERTY } from '@app/common/constants/user-property';
 import { PdfFieldData } from '@app/common/dtos/pdf-field-data.dto';
 import { Field } from '@app/common/types/fields';
 import { Injectable } from '@nestjs/common';
+import * as fs from 'fs';
+import * as path from 'path';
+
+const fontkit = require('@pdf-lib/fontkit');
 
 import {
   PDFCheckBox,
@@ -67,6 +71,14 @@ export class PdfService {
     formData: { [key: string]: any },
   ): Promise<Buffer> {
     const pdfDoc = await PDFDocument.load(pdfBuffer);
+    pdfDoc.registerFontkit(fontkit);
+
+    const fontPath = path.resolve(
+      '/usr/src/app',
+      'apps/document/src/pdf/Aleo-Regular.otf',
+    );
+    const fontBytes = fs.readFileSync(fontPath);
+    const customFont = await pdfDoc.embedFont(fontBytes);
 
     const form = pdfDoc.getForm();
 
@@ -84,6 +96,7 @@ export class PdfService {
 
       if (field instanceof PDFTextField) {
         field.setText(String(value));
+        field.updateAppearances(customFont);
       } else if (field instanceof PDFDropdown) {
         field.select(String(value));
       } else if (field instanceof PDFCheckBox) {
@@ -106,7 +119,6 @@ export class PdfService {
     form.flatten();
 
     const pdfBytes = await pdfDoc.save();
-
     return Buffer.from(pdfBytes);
   }
 

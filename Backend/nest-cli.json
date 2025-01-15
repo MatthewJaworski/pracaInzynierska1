@@ -25,6 +25,12 @@
       "entryFile": "main",
       "sourceRoot": "apps/document/src",
       "compilerOptions": {
+        "assets": [
+          {
+            "include": "pdf/Aleo-Regular.otf",
+            "outDir": "dist/apps/document/src/pdf"
+          }
+        ],
         "tsConfigPath": "apps/document/tsconfig.app.json"
       }
     },

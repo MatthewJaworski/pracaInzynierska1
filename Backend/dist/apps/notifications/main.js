@@ -68,10 +68,6 @@ const joi = __webpack_require__(/*! joi */ "joi");
 const config_1 = __webpack_require__(/*! @nestjs/config */ "@nestjs/config");
 const typeorm_1 = __webpack_require__(/*! @nestjs/typeorm */ "@nestjs/typeorm");
 const rabbit_module_1 = __webpack_require__(/*! @app/common/rabbitmq/rabbit.module */ "./libs/common/src/rabbitmq/rabbit.module.ts");
-console.log('DATABASE_PORT', process.env.DATABASE_PORT);
-console.log('DATABASE_HOST', process.env.DATABASE_HOST);
-console.log('DATABASE_PASSWORD', process.env.DATABASE_PASSWORD);
-console.log('DATABASE_NAME', process.env.DATABASE_NAME);
 let NotificationsModule = class NotificationsModule {
 };
 exports.NotificationsModule = NotificationsModule;

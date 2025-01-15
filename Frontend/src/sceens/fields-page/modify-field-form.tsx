@@ -70,6 +70,7 @@ export const ModifyFieldForm = ({
           control={form.control}
           name="fieldName"
           label={t('fields.name')}
+          disabled
           placeholder={t('fields.name')}
         />
         <FormTextField

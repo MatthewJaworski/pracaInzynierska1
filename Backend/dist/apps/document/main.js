@@ -990,7 +990,6 @@ let DocumentService = class DocumentService {
             if (context) {
                 const channel = context.getChannelRef();
                 const originalMsg = context.getMessage();
-                console.log('GIT JDASKJDKLASJLKDJALSKJLDKASJLKDJKLJAKLSJKLDAS');
                 channel.ack(originalMsg);
             }
             return result;
@@ -998,7 +997,6 @@ let DocumentService = class DocumentService {
         catch (error) {
             await queryRunner.rollbackTransaction();
             if (context) {
-                console.log('Error handling transaction:KLJSL;KASJDL;KJAS;LKDJAS;LKDJ;LASD', error.message);
                 const channel = context.getChannelRef();
                 const originalMsg = context.getMessage();
                 channel.nack(originalMsg, false, false);

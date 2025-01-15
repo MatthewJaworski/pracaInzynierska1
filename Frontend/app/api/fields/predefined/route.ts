@@ -85,11 +85,14 @@ export const DELETE = async (request: NextRequest) => {
 export const PATCH = async (request: NextRequest) => {
   const acceptLanguage = request.headers.get('Accept-Language');
   const url = getUrl('updatePredefinedField', 'bff');
+  const authentication = cookies().get('Authentication')?.value;
   const data = await request.json();
+
   try {
     const res = await axios.patch(url, data, {
       headers: {
-        'Accept-Language': acceptLanguage
+        'Accept-Language': acceptLanguage,
+        Authorization: `Bearer ${authentication}`
       },
       withCredentials: true
     });
